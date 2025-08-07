@@ -16,7 +16,7 @@ events = [{'time': '00:19', 'player': 'Player 3', 'event': '18-foot jumpshot mis
     {"time": "03:45", "player": "Player 3", "event": "Putback dunk made", "x": 8, "y": 25},
     {"time": "04:03", "player": "Player 4", "event": "Fadeaway three missed", "x": 24, "y": 21}]
           
-# Write data from dictionary to CSV
+# Write data from list to CSV
 with open(filename, mode = 'w', newline='', encoding = 'utf-8') as event_csv:
     file_headers = ['time', 'player', 'event', 'x', 'y']
     writer = csv.DictWriter(event_csv, fieldnames = file_headers)
